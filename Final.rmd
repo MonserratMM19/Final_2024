@@ -171,14 +171,18 @@ than those who get the vaccine. The vaccine appears to provide more protection a
 ### Inferential 
 
 
-
-
 ```{r}
 chisq.test(table1)
 chisqtestGC(table1)
 femalesfish <- fisher.test(table1)
 femalesfish
 ```
+
+The information to pay close attention to among all of these results is the output of the Fisher's Exact test. The p-value displayed above is extremely small at 3e-04. This is an extremely tiny number. seeing this number means that these results are not likely to occur by chance and so the null hypothesis can be rejected in favor of the alternative 
+
+The Fisher's Exact test illustrates that the odds ratio is 1.5. female(women) who got the vaccine were about 1.5 times less likely to get covid 19 than women that only took the placebo. 
+
+
 
 ```{r}
 effect <- femalesfish$p.value/(femalesfish$p.value +1)
@@ -191,6 +195,9 @@ low=(femalesfish$conf.int[1]/(femalesfish$conf.int[1] +1))*100
 hi=(femalesfish$conf.int[2]/(femalesfish$conf.int[2] +1))*100
 options(digits=2)
 ```
+Above is the effectiveness for the COVID-19 vaccine for females. If the effectiveness is above 50% that means that the vaccine is effective. Based on the interval seen above, we on conclude that the vaccine is effective in protecting females from getting COVID-19. The odds ratio is approximately how effective the vaccine is. The odds ratio for the females is 60% 
+
+
 
 ## Effectiveness Confidence Interval `r low`  to `r hi`
 
