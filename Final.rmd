@@ -121,6 +121,8 @@ The odds ratio is approximately how effective the vaccine is. The odds ratio for
 
 ## Effectiveness Confidence Interval `r low`  to `r hi`
 
+
+
 ## Females
 
 ### Barplot
@@ -267,7 +269,7 @@ print(effectivenessLGBTQ)
 
 The p-value is 1e-08. This in an incredibly small number and with that being said, the conclusion is that these results are unlikely to occur by chance.
 
-The Fishers's Exact Test illustrates that the odds ratio is 0.18 
+The Fishers's Exact Test illustrates that the odds ratio is 15 
 LGBTQ individuals who got the vaccine were about 0.18 times more likely to get Covid-19 than gays that took the placebo.
 
 The null hypothesis is rejected in favor the the alternative. The drug is completely ineffective in preventing the chances of getting covid-19 in individuals who identify as LGBTQ
@@ -282,9 +284,6 @@ low=(LGBTQfish$conf.int[1]/(LGBTQfish$conf.int[1] +1))*100
 hi=(LGBTQfish$conf.int[2]/(LGBTQfish$conf.int[2] +1))*100
 options(digits=2)
 ```
-
-
-
 
 
 ## Effectiveness Confidence Interval `r low`  to `r hi`
