@@ -40,7 +40,7 @@ FinalData <- FinalData %>%
 mutate(across(where(is.character), as.factor))
 ```
 
-The study required specific subgroups to be isolated from the broader categories in order to be properly analyzed. For instance, "gal" and "guy" were separated into subgroups, as were people who identified as having a gay sexual orientation and those who answered "yes" to participating in drug use. These categories were examined in isolation to determine whether or not these particular populations should take the new COVID-19 vaccine. To create the effectiveness interval for each of the four categories, each group of people in this study had to be 
+The study required specific subgroups to be isolated from the broader categories in order to be properly analyzed. For instance, "females" and "males" were separated into subgroups, as were people who identified as having a gay sexual orientation and those who answered "yes" to participating in drug use. These categories were examined in isolation to determine whether or not these particular populations should take the new COVID-19 vaccine. To create the effectiveness interval for each of the four categories, each group of people in this study had to be 
 
 ## Males
 
@@ -65,7 +65,7 @@ basicCC + geom_bar(stat="identity", position = "dodge")
 This plot represents the population of male people and the relationship to the contraction of covid-19 by either talking the vaccine or the placebo. 
 
 
-The plot above shows that a shocking 38% of the people that took the vaccine did in fact get covid-19, while only approximately 69% of the people taking the placebo contracted covid-19.  A substantially higher percentage of people who took tha vaccine contracted covid-19 versus those who were only given the placebo. The vaccine appears to be ineffective in protection against covid-19. The odds of getting covid-19 while taking the vaccine is 2.25:1. The men that took the vaccine were 2.25 less likely to get covid-19 than those taking the placebo.
+The plot above shows that 38% of the people that took the vaccine did in fact get covid-19, while only approximately 69% of the people taking the placebo contracted covid-19.  A substantially higher percentage of people who took tha vaccine contracted covid-19 versus those who were only given the placebo. The vaccine appears to be ineffective in protection against covid-19. The odds of getting covid-19 while taking the vaccine is 2.25:1. The men that took the vaccine were 2.25 less likely to get covid-19 than those taking the placebo.
 
 
 There are two plots. In first plot,the x-axis represents infected, whether the participants were infected with covid-19 or they were not. The y-axis represents the count, or number of people that got covid-19 or not.
@@ -83,6 +83,8 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+
+
 ### Inferential 
 
 
@@ -93,6 +95,8 @@ chisqtestGC(table1)
 Malesfish <- fisher.test(table1)
 Malesfish
 ```
+
+
 
 ```{r}
 effect <- Malesfish$p.value/(Malesfish$p.value +1)
@@ -105,6 +109,8 @@ low=(Malesfish$conf.int[1]/(Malesfish$conf.int[1] +1))*100
 hi=(Malesfish$conf.int[2]/(Malesfish$conf.int[2] +1))*100
 options(digits=2)
 ```
+
+
 
 ## Effectiveness Confidence Interval `r low`  to `r hi`
 
