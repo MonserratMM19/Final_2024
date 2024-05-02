@@ -243,8 +243,12 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-### Inferential 
+These numerical results show specific percentages of the LGBTQ group individuals that got covid-19 after taking the placebo and taking the vaccine. 
+The LGBTQ participants of people that took the vaccine and contracted covid-19 was at an approximately 85! Those participants that only received the placebo only contacted covid-19 at 15%. The vaccine id evidently completely ineffective in protecting the LGBTQ community against covid-19 and taking it is not advised. 
+The odds of getting covid-19 while taking the vaccine is 0.18  The individuals who identified as part of the LGBTQ and took the vaccine were three times as likely to get covid-19 than those taking the placebo.
 
+
+### Inferential 
 
 
 
