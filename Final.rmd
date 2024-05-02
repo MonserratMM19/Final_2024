@@ -62,7 +62,7 @@ basicCC <- ggplot(dd2,aes(x=infected,y=prcnt*100, fill=treatment))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
-This plot represents the population of male people and the relationship to the contraction of covid-19 by either talking the vaccine or the placebo. 
+This plot represents the population of male people and the how got covid-19 after gotting the vaccine and talikng the placebo. 
 
 
 The plot above shows that 38% of the people that took the vaccine did in fact get covid-19, while only approximately 69% of the people taking the placebo contracted covid-19.  A substantially higher percentage of people who took tha vaccine contracted covid-19 versus those who were only given the placebo. The vaccine appears to be ineffective in protection against covid-19. The odds of getting covid-19 while taking the vaccine is 2.25:1. The men that took the vaccine were 2.25 less likely to get covid-19 than those taking the placebo.
@@ -221,6 +221,20 @@ basicC + geom_bar(stat="identity",position="dodge")
 basicCC <- ggplot(dd2,aes(x=infected,y=prcnt*100,fill=treatment)) 
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
+
+
+This plot represents the population the group of LGBTQ people who got COVID-19 after getting the vaccine and taking a placebo 
+
+In this barplot, it appears that a sniffling 85% of the individuals that took the vaccine got covid-19 as well as the 15% who received the placebo. The odds of getting covid-19 while taking the vaccine is 0.18. The individuals who identified as part of the LGBTQ group and took the vaccine were three times as likely to get covid-19 than those taking the placebo.
+
+
+There are two plots. In first plot,the x-axis represents infected, whether the participants were infected with covid-19 or they were not. The y-axis represents the count, or number of people that got covid-19 or not.
+In the second plot, the one above, The The left two bars of the graph are all the people that got covid-19. The x-axis represents whether a person got covid-19 or not. The y-axis, however, instead of representing the number of people who got covid-19, now represents the percentage of people that got covid-19 after taking the the placebo or taking the Vaccine. 
+
+
+The codes that  create this plot start with the code block beginning with dd2. dd2 can be seen in the environment pane and if inspected contains 4 variables.These variables include infected, treatment, count, and prcent(stands for percent). The second group of codes is called the basicC. BasicC can also be seen in the environment pane and appears to contain a list of 9 variables. This information creates the first plot. The basicCC is the last bunch of codes and is also in the files pane. It also contains 9 variables and helps to create the percentage plot, the second plot.
+
+
 ### Numerical results
 
 ```{r}
