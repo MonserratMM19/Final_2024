@@ -314,6 +314,22 @@ basicCC <- ggplot(dd2,aes(x=infected,y=prcnt*100,fill=treatment))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
+
+This plot represents the population of people who answered  Druggies to drug use and the relationship to the contraction of covid-19 while taking either the vaccine or the placebo.
+
+This barplot shows that around 88% of the people who answered yes to drug use and received the vaccine contracted COVID-19. This means that around 12% of the druggies that only took the placebo ended up getting covid-19. The odds of getting COVID-19 while taking the vaccine is 0.13. The druggies that took the vaccine were 0.13 more likely to get covid-19 than those taking the placebo.
+
+
+There are two plots. In the first plot, the x-axis represents infected, whether the participants were infected with COVID-19 or they were not. The y-axis represents the count, or number of people that got covid-19 or not.
+In the second plot, the one above, The left two bars of the graph are all the people who got COVID-19. The x-axis represents whether a person got COVID-19 or not. The y-axis, however, instead of representing the number of people who got COVID-19, now represents the percentage of people who got COVID-19 after taking the placebo or taking the Vaccine. 
+
+
+
+
+
+
+
+
 ### Numerical results
 
 ```{r}
@@ -333,14 +349,14 @@ Druggiesfish
 
 
 ```{r}
-effect <- drugfish$p.value/(drugfish$p.value +1)
-effectivenessdrug = drugfish$estimate/(drugfish$estimate +1)*100
-print(effectivenessdrug)
+effect <- Druggiesfish$p.value/(Druggiesfish$p.value +1)
+effectivenessDruggies = Druggiesfish$estimate/(Druggiesfish$estimate +1)*100
+print(effectivenessDruggies)
 ```
 
 ```{r}
-low=(drugfish$conf.int[1]/(drugfish$conf.int[1] +1))*100
-hi=(drugfish$conf.int[2]/(drugfish$conf.int[2] +1))*100
+low=(Druggiesfish$conf.int[1]/(Druggiesfish$conf.int[1] +1))*100
+hi=(Druggiesfish$conf.int[2]/(Druggiesfish$conf.int[2] +1))*100
 options(digits=2)
 ```
 
