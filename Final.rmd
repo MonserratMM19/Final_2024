@@ -386,6 +386,19 @@ Above is the effectiveness of the covid-19 vaccine for Druggies. If the effectiv
 # Overall Results and Conclusions
 
 
+The COVID-19 vaccine was effective in protecting the males against the contraction of the COVID-19 The COVID-19 effectiveness was `r effectivenessMales` for men. The men were protected the most with this particular vaccine.
+
+
+The COVID-19 vaccine was highly successful in protecting women against COVID-19. The covid-19 effectiveness was `r effectivenessFemales`.
+
+The COVID-19 vaccine was not effective in treating people who identified as LGBTQ. The individuals who identified as LGBTQ and took the vaccine were 0.18 times more likely to get COVID-19 than those taking the placebo. The COVID-19 effectiveness was `r effectivenessLGBTQ` for LGBTQ individuals.
+
+
+The Druggies that took the vaccine were 0.13 times more likely to get covid-19 than those taking the placebo. The covid-19 effectiveness was `r effectivenessDruggies` for Druggies.
+
+If you are a Druggie or identify as LGBTQ it is not recommended to receive the vaccine. However, if you are a male or female, the vaccine was reported to have been effective.
+The null that there is no difference in taking the vaccine can be accepted to the categories including druggies and LGBTQ individuals. the alternative, that the vaccine works and is effective, can be accepted by Females and Males.
+
 
 
 
