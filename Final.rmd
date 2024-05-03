@@ -324,11 +324,7 @@ This barplot shows that around 88% of the people who answered yes to drug use an
 There are two plots. In the first plot, the x-axis represents infected, whether the participants were infected with COVID-19 or they were not. The y-axis represents the count, or number of people that got covid-19 or not.
 In the second plot, the one above, The left two bars of the graph are all the people who got COVID-19. The x-axis represents whether a person got COVID-19 or not. The y-axis, however, instead of representing the number of people who got COVID-19, now represents the percentage of people who got COVID-19 after taking the placebo or taking the Vaccine. 
 
-
-
-
-
-
+The codes that create this plot start with the code block beginning with dd2. dd2 can be seen in the environment pane and if inspected contains 4 variables. These variables include infected, treatment, count, and percent (stands for percent). The second group of codes is called the basic C. BasicC can also be seen in the environment pane and appears to contain a list of 9 variables. This information creates the first plot. The basic CC is the last bunch of codes and is also in the files pane. It also contains 9 variables and helps to create the percentage plot, the second plot.
 
 
 ### Numerical results
@@ -338,6 +334,14 @@ table1 <- xtabs(~infected + treatment, data= Druggies)
 rowPerc(table1)
 colPerc(table1)
 ```
+
+
+These numerical results show specific percentages of drug users who got COVID-19 after taking the placebo and taking the vaccine.
+The percentage of drug users that took the vaccine and contacted COVID-19 is 88% Those that were only given the placebo and got COVID-19 was almost 12%. It is clear that the vaccine to prevent COVID-19 is ineffective in protecting drug users against COVID-19 and so getting this vaccine is not recommended. The odds of getting COVID-19 while taking the vaccine is 0.13 The drug users that took the vaccine were 0.13 more likely to get COVID-19 than those taking the placebo.
+
+
+
+
 ### Inferential 
 
 
