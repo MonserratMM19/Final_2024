@@ -121,6 +121,10 @@ The odds ratio is approximately how effective the vaccine is. The odds ratio for
 
 ## Effectiveness Confidence Interval `r low`  to `r hi`
 
+Above is the effectiveness of the COVID-19 vaccine for guys(males). If the effectiveness is above 50% that means that the vaccine is effective. Based on the interval seen above, we can conclude that the vaccine is effective in protecting Males from getting COVID-19.
+
+The odds ratio is approximately how effective the vaccine is. The odds ratio for the Males is 69%. 
+
 
 
 ## Females
@@ -203,6 +207,8 @@ Above is the effectiveness for the COVID-19 vaccine for females. If the effectiv
 
 ## Effectiveness Confidence Interval `r low`  to `r hi`
 
+Above is the effectiveness of the COVID-19 vaccine for Females. If the effectiveness is above 50% that means that the vaccine is effective. Based on the interval seen above, we can conclude that the vaccine is effective in protecting females from getting COVID-19. The odds ratio is approximately how effective the vaccine is. The odds ratio for the Females is 60%.
+
 
 
 ## LGBTQ
@@ -245,9 +251,10 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-These numerical results show specific percentages of the LGBTQ group individuals that got covid-19 after taking the placebo and taking the vaccine. 
-The LGBTQ participants of people that took the vaccine and contracted covid-19 was at an approximately 85! Those participants that only received the placebo only contacted covid-19 at 15%. The vaccine id evidently completely ineffective in protecting the LGBTQ community against covid-19 and taking it is not advised. 
-The odds of getting covid-19 while taking the vaccine is 0.18  The individuals who identified as part of the LGBTQ and took the vaccine were three times as likely to get covid-19 than those taking the placebo.
+These numerical results show specific percentages of LGBTQ individuals who got COVID-19 after taking the placebo and taking the vaccine. 
+The LGBTQ participants that took the vaccine and contracted COVID-19 were at an approximately shocking 85%! Those participants who only received the placebo contacted COVID-19 at 15%. The vaccine is evidently completely ineffective in protecting the LGBTQ community against covid-19 and taking it is not advised. 
+The odds of getting COVID-19 while taking the vaccine is 0.18. The individuals who identified as LGBTQ and took the vaccine were 0.18 more likely to get COVID-19 than those taking the placebo.
+
 
 
 ### Inferential 
@@ -261,20 +268,12 @@ LGBTQfish <- fisher.test(table1)
 LGBTQfish
 ```
 
-```{r}
-effect <- LGBTQfish$p.value/(LGBTQfish$p.value +1)
-effectivenessLGBTQ = LGBTQfish$estimate/(LGBTQfish$estimate +1)*100
-print(effectivenessLGBTQ)
-```
+The p-value is 7e-08. This is an incredibly small number and with that being said, the conclusion is that these results are unlikely to occur by chance.
 
-The p-value is 1e-08. This in an incredibly small number and with that being said, the conclusion is that these results are unlikely to occur by chance.
+The Fishers's Exact Test illustrates that the odds ratio is 0.18
+LGBTQ individuals who got the vaccine were about 0.18 times more likely to get COVID-19 than LGBTQ who took the placebo.
 
-The Fishers's Exact Test illustrates that the odds ratio is 15 
-LGBTQ individuals who got the vaccine were about 0.18 times more likely to get Covid-19 than gays that took the placebo.
-
-The null hypothesis is rejected in favor the the alternative. The drug is completely ineffective in preventing the chances of getting covid-19 in individuals who identify as LGBTQ
-
-
+The null hypothesis is rejected in favor the the alternative. The drug is completely ineffective in preventing the chances of getting COVID-19 in individuals who identify as gay.
 
 
 
@@ -287,6 +286,13 @@ options(digits=2)
 
 
 ## Effectiveness Confidence Interval `r low`  to `r hi`
+
+
+
+Above is the effectiveness for the covid-19 for those who identified as LGBTQ.  If the effectiveness is above 50% that means that the vaccine is effective. Based on the interval seen above, we can conclude that the vaccine is ineffective in protecting people who identify as LGBTQ from getting COVID-19. 
+
+The odds ratio is approximately how effective the vaccine is. The odds ratio for the LGBTQ folk be seen above as 15. This is completely ineffective. The people who take the vaccine are not better off than those who don't receive it at all. The effectiveness confidence interval for the people who identified as LGBTQ is 7.6 to 26.57.
+
 
 
 
