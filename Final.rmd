@@ -298,6 +298,7 @@ The odds ratio is approximately how effective the vaccine is. The odds ratio for
 
 
 ## Druggies
+## Barplot
 
 ```{r}
 dd2 <-  Druggies %>% group_by(infected,treatment) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
