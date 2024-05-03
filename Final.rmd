@@ -380,6 +380,8 @@ options(digits=2)
 ## Effectiveness Confidence Interval `r low`  to `r hi`
 
 
+Above is the effectiveness of the covid-19 vaccine for Druggies. If the effectiveness is above 50% that means that the vaccine is effective. Based on the interval seen above, we can conclude that the vaccine is not effective in protecting Druggies from getting covid-19. The odds ratio is approximately how effective the vaccine is. The odds ratio for the Druggies is 11%. Above, is the effectiveness for the covid-19 for the druggies. If the effectiveness is above 50% that means that the vaccine is effective. Based on the interval seen above, we can conclude that the vaccine is not effective in protecting drug users from getting COVID-19. This vaccine does not work in protecting drug users from contracting COVID-19. The odds ratio is approximately how effective the vaccine is. The odds ratio for the drug users can be seen above as 11. The effectiveness confidence interval for the drug users is 4.6 to 21.82.
+
 
 # Overall Results and Conclusions
 
